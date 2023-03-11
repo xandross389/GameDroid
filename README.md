@@ -1,2 +1,2 @@
 # GameDroid
-Android app to manage Game Catalog, designed for game sellers. This is and old project developed in 2015
+Android app to manage Games Catalog, designed for game sellers. This is and old project developed in 2015
