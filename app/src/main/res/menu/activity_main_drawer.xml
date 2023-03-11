@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_new"
+            android:title="Ultimos estrenos" />
+        <item
+            android:id="@+id/nav_next"
+            android:icon="@drawable/ic_next"
+            android:title="Próximos estrenos" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favs"
+            android:title="Favoritos" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_find_data"
+            android:title="Buscar" />
+    </group>
+
+    <item android:title="Contacto">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_user_server"
+                android:title="Datos de contacto" />
+
+            <!--<item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compratir" />-->
+        </menu>
+    </item>
+
+</menu>

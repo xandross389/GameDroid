@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cu.com.xandross.gamedroid.DetailsActivity"
+    tools:showIn="@layout/activity_details">
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtGameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_weight="0.25"
+            android:weightSum="1"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Datos generales" />
+
+        // Estado
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="Nombre:" />
+
+            <TextView
+                android:id="@+id/txtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="No disponible" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        // Estado
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="Estado:" />
+
+            <TextView
+                android:id="@+id/txtEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="No disponible" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        // Plataforma
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="Plataforma:" />
+
+            <TextView
+                android:id="@+id/txtPlataforma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="No disponible" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        // Fecha
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="right"
+                android:weightSum="1"
+                android:textStyle="bold"
+                android:layout_weight="0.5"
+                android:text="Fecha:" />
+
+            <TextView
+                android:id="@+id/txtFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="No disponible" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        // Genero
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="right"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:textStyle="bold"
+                android:text="Género:" />
+
+            <TextView
+                android:id="@+id/txtGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:weightSum="1"
+                android:text="No disponible" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        // Genero
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="right"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:textStyle="bold"
+                android:text="Distribuidor:" />
+
+            <TextView
+                android:id="@+id/txtDistribuidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:weightSum="1"
+                android:text="No disponible" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        // formato y tamano
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="Formato:" />
+
+            <TextView
+                android:id="@+id/txtFormato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="No disponible" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        // formato y tamano
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="right"
+                android:weightSum="1"
+                android:textStyle="bold"
+                android:layout_weight="0.5"
+                android:text="Tamaño:" />
+
+            <TextView
+                android:id="@+id/txtTamanno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="No disponible" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        // edad e idioma
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="Edad:" />
+
+            <TextView
+                android:id="@+id/txtEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="No disponible" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        // edad e idioma
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="right"
+                android:weightSum="1"
+                android:textStyle="bold"
+                android:layout_weight="0.5"
+                android:text="Idioma:" />
+
+            <TextView
+                android:id="@+id/txtIdioma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="No disponible" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="right"
+                android:weightSum="1"
+                android:textStyle="bold"
+                android:layout_weight="0.5"
+                android:text="Discos:" />
+
+            <TextView
+                android:id="@+id/txtDiscos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:text="No disponible" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_weight="0.5"
+            android:weightSum="1"
+            android:text="Descripción (Sinopsis)" />
+
+        // Descripcion
+        <TextView
+            android:id="@+id/txtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:gravity="left"
+            android:layout_weight="0.25"
+            android:weightSum="1"
+            android:text="No hay descripción disponible para este juego" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_weight="0.25"
+            android:weightSum="1"
+            android:text="Requerimientos" />
+
+        // Requerimientos del sistema
+        <TextView
+            android:id="@+id/txtRequerimientos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:gravity="left"
+            android:layout_weight="0.25"
+            android:weightSum="1"
+            android:text="Los requerimientos para este juego no están disponibles" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v4.widget.NestedScrollView>
